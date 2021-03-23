@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset="UTF-8">
+<title>목록 태그(ul/ol)</title>
+<style>
+	#firstul{
+		list-style: square;
+	}
+	#secondul{
+		list-style: circle;
+	}
+	#thirdtul{
+		list-style: none;
+	}
+	
+	#firstol{
+		list-style-type: decimal;
+	}
+	
+	#secondol{
+		list-style-type: lower-roman;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>관광 안내 전화</h1>
+	<p>한국관광공사에서는 전국의 관광안내소와 공동으로 여러분의 여행편의를 위해 관광안내전화 1330 서비스를 연중무휴
+		실시하고 있습니다</p>
+	<ul id="firstul">
+		<li>일반 전화 : (국번없이) 1330</li>
+		<li>휴대 전화 : 064-1330</li>
+	</ul>
+	
+	<ul id="thirdtul">
+		<li>상건 전화 : (국번없이) 1330</li>
+		<li>상건 휴대 전화 : 064-1330</li>
+	</ul>
+	
+	<hr>
+
+	<h1>1박 2일 가족 여행 코스</h1>
+	<ul id="secondul" >
+	<li>1일차
+		<ol id="firstol">
+			<li>해녀박물관</li>
+			<li>낚시체험</li>
+		</ol>
+	</li>
+	<li>2일차
+		<ol start="3" id="secondol">
+			<li>용눈이오름</li>
+			<li>만장굴</li>
+			<li>카약체험</li>
+		</ol>
+	</li>
+	</ul>
+</body>
+</html>
