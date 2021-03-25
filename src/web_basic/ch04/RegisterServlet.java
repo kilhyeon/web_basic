@@ -35,8 +35,8 @@ public class RegisterServlet extends HttpServlet {
 		out.println("<html>");
 		
 		out.println("<h2>로그인 정보</h2>");
-		out.println(id);
-		out.println(pwd);
+		out.printf("id = %s<br>", id);
+		out.printf("password = %s<br>", pwd);
 		
 		out.println("<h2>수강과목</h2>");
 		String t = null;

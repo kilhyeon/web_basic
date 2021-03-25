@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="RegisterServlet2" method="get">
+	<form action="RegisterServlet2" method="get">
 		<fieldset>
 			<legend>로그인 정보</legend>
 			<ul>
@@ -47,15 +47,15 @@
 			<ul>
 				<li>
 					<lable class="reg" for="member">참여인원<small>(최대10명)</small></lable>
-					<input type="number" id="member" value="1" min="0" max="10" step="1">
+					<input type="number" id="member" value="1" min="0" max="10" step="1" name="member">
 				</li>
 				<li>
 					<lable class="reg" for="stuffs">지원물품<small>(1인당 5개)</small></lable>
-					<input type="number" id="stuffs" value="1" min="0" max="50" step="5">
+					<input type="number" id="stuffs" value="0" min="0" max="50" step="5" name="stuffs">
 				</li>
 				<li>
 					<lable class="reg" for="satis">희망 단계<small>(하,중,상)</small></lable>
-					<input type="range" id="satis" value="2" min="1" max="3">
+					<input type="range" id="satis" value="2" min="1" max="3" name="satis">
 				</li>
 			</ul>
 		</fieldset>
@@ -71,15 +71,15 @@
 		<fieldset>
 			<legend>메일링</legend>
 			<p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</p>
-				<label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
-				<label><input type="checkbox" name="mailing2" value="dialog">5분 회화</label>
-				<label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+				<label><input type="checkbox" name="mailing" value="news">해외 단신</label>
+				<label><input type="checkbox" name="mailing" value="dialog">5분 회화</label>
+				<label><input type="checkbox" name="mailing" value="pops">모닝팝스</label>
 		</fieldset>
 		<br>
 		<fieldset>
 			<legend>조회 기간</legend>
-			<label><input type="date" id="start" name="date"></label>
-			<label><input type="date" id="end" name="date"></label>
+			<label><input type="datetime-local" id="start" name="start-date"></label>
+			<label><input type="datetime-local" id="end" name="end-date"></label>
 		</fieldset>
 		<br>
 		<input type="submit" value="가입하기">
