@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+.indent1 {
+	text-indent: 15px;
+}
+
+.indent2 {
+	text-indent: 5%;
+}
+
+.big-line {
+	line-height: 2;
+}
+
+.small-line {
+	line-height: 0.7;
+}
+
+.content {
+	border: 1px solid #ccc;
+	width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.content:hover {
+	overflow: visible;
+}

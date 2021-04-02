@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+p {
+	font-style: italic;
+}
+
+p#txt {
+	font-style: normal;
+}
+
+.accent {
+	font-variant: small-caps; /* 작은 대문자 */
+	font-weight: bold; /* 굵게 */
+}
+
+p.txt {
+	font: italic 12px/24px 돋움; /* 글꼴 스타일, 크기, 줄간격, 글꼴 */
+}
